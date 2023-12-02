@@ -18,10 +18,16 @@ struct ContentView: View {
             Button("Button") {
                 Task{
                     do{
-                        let network = TokensService()
-                        let tokens = try await network.getTokens()
-                        print (tokens)
+//                        let network = TokensService()
+//                        let tokens = try await network.getTokens()
+//                        print (tokens)
                         
+                        let tokenListService = TokenListService()
+//                        try await tokenListService.postTokenList()
+//                        tokenListService.putTokenList()
+//                        tokenListService.deleteTokenList()
+                        let tokenList = try await tokenListService.getTokenList()
+                        print (tokenList)
                     } catch {
                         print(error.localizedDescription)
                     }

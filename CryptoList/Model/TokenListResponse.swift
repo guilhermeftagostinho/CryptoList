@@ -7,6 +7,7 @@
 
 import Foundation
 
-struct TokenListResponse {
-    let items: [TokenList]
+struct TokenListResponse: Codable {
+    let page: Int?
+//    let items: [TokenList]
 }
