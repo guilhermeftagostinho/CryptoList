@@ -27,7 +27,6 @@ struct TokenListService{
     //        var request = URLRequest(url: url)
     //        request.httpMethod = "POST"
     //        let token = Token(symbol: "TRX", name: "trosss", image: "", currentPrice: 100)
-    ////        let (data, _) = try await URLSession.shared.data(for: URLRequest(url: url))
     //        let encoder = JSONEncoder()
     //        let encodedData = try! encoder.encode(token)
     //        request.httpBody = encodedData
@@ -36,17 +35,8 @@ struct TokenListService{
     //            forHTTPHeaderField: "Content-Type"
     //        )
     //
-    //        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-    //            let statusCode = (response as! HTTPURLResponse).statusCode
+    //        let (data, _) = try await URLSession.shared.data(for: URLRequest(url: url))
     //
-    //            if statusCode == 200 {
-    //                print("SUCCESS")
-    //            } else {
-    //                print("FAILURE")
-    //                print(response!)
-    //            }
-    //        }
-    //        task.resume()
     //    }
     //
     //    func putTokenList() {
@@ -54,7 +44,6 @@ struct TokenListService{
     //        var request = URLRequest(url: url)
     //        request.httpMethod = "PATCH"
     //        let token = Token(symbol: "alterado", name: "alteradotb", image: "", currentPrice: 150)
-    ////        let (data, _) = try await URLSession.shared.data(for: URLRequest(url: url))
     //        let encoder = JSONEncoder()
     //        let encodedData = try! encoder.encode(token)
     //        request.httpBody = encodedData
@@ -62,20 +51,8 @@ struct TokenListService{
     //            "application/json",
     //            forHTTPHeaderField: "Content-Type"
     //        )
-    //
-    //        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-    //            let statusCode = (response as! HTTPURLResponse).statusCode
-    //
-    //            if statusCode == 200 {
-    //                print("SUCCESS")
-    //            } else {
-    //                print("FAILURE")
-    //                print(response!)
-    //            }
-    //        }
-    //        task.resume()
-    //
-    //    }
+    //        let (data, _) = try await URLSession.shared.data(for: URLRequest(url: url))
+    //     }
     //
     //    func deleteTokenList() {
     //        let url = URL(string: "http://54.207.173.246:8090/api/collections/token/records/u54tm66eaow0ed2")!
@@ -87,10 +64,6 @@ struct TokenListService{
     //        )
     //
     //        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-    //            let statusCode = (response as! HTTPURLResponse).statusCode
-    //
-    //
-    //        }
     //        task.resume()
     //
     //    }
